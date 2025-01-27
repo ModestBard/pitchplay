@@ -1,14 +1,15 @@
 import { Component,OnInit  } from '@angular/core';
 import { RouterOutlet  } from '@angular/router';
-// import { MainPageComponent } from "./myComponents/main-page/main-page.component";
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
 import { environment } from '../../enviourment';
+import { ToastrModule } from 'ngx-toastr';
+import { ToastComponent } from "../../toast.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ToastrModule, ToastComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
