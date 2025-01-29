@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-// import { MainPageComponent } from "./myComponents/main-page/main-page.component";
+// import { MainPageComponent } from "./mymyComponents/main-page/main-page.component";
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import { environment } from '../../enviourment';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { NavbarComponent } from './myComponents/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
