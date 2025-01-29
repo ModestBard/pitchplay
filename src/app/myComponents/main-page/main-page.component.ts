@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.css']
 })
-export class HomePageComponent {
+export class HomeComponent {
   constructor(private router: Router) {}
 
   onNavigate(): void {
