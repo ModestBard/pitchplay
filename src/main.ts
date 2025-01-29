@@ -9,9 +9,11 @@ import { environment } from '../enviourment';
 import { routes } from './app/app.routes';
 import { provideToastr, ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { provideHttpClient } from '@angular/common/http';
 
 bootstrapApplication(AppComponent, {
   providers: [
+    provideHttpClient(),
     provideAnimations(),
     provideToastr(),
     importProvidersFrom(
